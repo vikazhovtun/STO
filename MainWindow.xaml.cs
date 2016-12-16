@@ -96,11 +96,11 @@ namespace STO
         }
 
         private void deleteButton_Click(object sender, RoutedEventArgs e)
-        {
+        {// в зависимости какая вкладка выбрана
             int Tab_open = tabs.SelectedIndex;
             switch (Tab_open)
             {
-                case 0:
+                case 0: //если строка выбрана
                     if (repairGrid.SelectedItems.Count > 0)
                     {
                         for (int i = 0; i < repairGrid.SelectedItems.Count; i++)
@@ -118,7 +118,7 @@ namespace STO
                     }
                     break;
                 case 1:
-                    if (carGrid.SelectedItems.Count > 0)
+                    if (carGrid.SelectedItems.Count > 0) //если строка выбрана
                     {
                         for (int i = 0; i < carGrid.SelectedItems.Count; i++)
                         {
@@ -134,7 +134,7 @@ namespace STO
                     }
                     break;
                 case 2:
-                    if (clientGrid.SelectedItems.Count > 0)
+                    if (clientGrid.SelectedItems.Count > 0) //если строка выбрана
                     {
                         for (int i = 0; i < clientGrid.SelectedItems.Count; i++)
                         {
@@ -153,7 +153,7 @@ namespace STO
                     }
                     break;
                 case 3:
-                    if (detailGrid.SelectedItems.Count > 0)
+                    if (detailGrid.SelectedItems.Count > 0) //если строка выбрана
                     {
                         for (int i = 0; i < detailGrid.SelectedItems.Count; i++)
                         {
@@ -162,7 +162,7 @@ namespace STO
                                 db.cDetail.Remove(detail);// удаление элемента из таблицы базы данных
                         }
                     }
-                    else
+                    else 
                     {
                         MessageBox.Show("Choose element to delete it.", "ERROR", MessageBoxButton.OK, MessageBoxImage.Error);
 
