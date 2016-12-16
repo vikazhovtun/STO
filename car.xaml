@@ -1,0 +1,20 @@
+﻿<Window x:Class="STO.car"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="car" Height="500" Width="480">
+    <Grid Margin="0,0,0,-30">
+
+        <Label Content="Number of car" HorizontalAlignment="Left" Margin="195,186,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="number" Height="26" Margin="163,217,150,0" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBox x:Name="brand" HorizontalAlignment="Left" Height="33" Margin="163,309,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="159"/>
+        <Label Content="Brand anf model of car" HorizontalAlignment="Left" Margin="171,278,0,0" VerticalAlignment="Top"/>
+        <Button Content="Add" HorizontalAlignment="Left" Margin="183,403,0,0" VerticalAlignment="Top" Width="109" Height="42" Click="Button_Click"/>
+        <Label Content="Add a car " HorizontalAlignment="Center" Margin="195,10,190,0" VerticalAlignment="Top" FontSize="14" Width="87" FontWeight="Bold"/>
+        <ComboBox x:Name="client_cb"
+         ItemsSource="{Binding Path=cClient}"
+         DisplayMemberPath="Full_Name"
+         SelectedItem="{Binding Path=CurrentItem}" Margin="163,111,150,354"
+         />
+        <Label Content="Choose owner of car" HorizontalAlignment="Left" Margin="183,80,0,0" VerticalAlignment="Top"/>
+    </Grid>
+</Window>

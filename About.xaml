@@ -1,0 +1,8 @@
+﻿<Window x:Class="STO.About"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="About" Height="331.333" Width="438.666">
+    <Grid IsHitTestVisible="False">
+        <Label Content="Курсова робота з дисципліни              &#xD;&#xA;'Організація баз даних та знань'            &#xD;&#xA;Додаток для роботи з базою даних             &#xD;&#xA;На тему 'Облік ремонтів СТО'         &#xD;&#xA;Виконала: студентка 3 курсу,                &#xD;&#xA;групи ІС-41,  Жовтун Вікторія" HorizontalAlignment="Left" Margin="0,10,0,0" VerticalAlignment="Top" Height="281" Width="421" FontSize="24" FontFamily="Segoe UI Light"/>
+    </Grid>
+</Window>

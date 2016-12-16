@@ -1,0 +1,14 @@
+﻿<Window x:Class="STO.detail"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="detail" Height="400" Width="400">
+    <Grid>
+        <Label Content="Add new detail" HorizontalAlignment="Left" Margin="146,16,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.263,-0.692" FontSize="14" FontWeight="Bold"/>
+        <TextBox x:Name ="name" HorizontalAlignment="Left" Height="41" Margin="113,104,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="171"/>
+        <TextBox x:Name="amount" HorizontalAlignment="Left" Height="40" Margin="113,184,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="171"/>
+        <Button Content="Add" HorizontalAlignment="Left" Margin="146,267,0,0" VerticalAlignment="Top" Width="104" Height="46" Click="Button_Click"/>
+        <Label Content="Name of detail" HorizontalAlignment="Left" Margin="113,73,0,0" VerticalAlignment="Top"/>
+        <Label Content="Available amount of this detail" HorizontalAlignment="Right" Margin="0,153,108,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>
